@@ -1,8 +1,8 @@
-package template.chainofresponsibility.descontos;
+package template.descontos;
 
 
 
-import template.chainofresponsibility.orcamento.Orcamento;
+import template.orcamento.Orcamento;
 
 import java.math.BigDecimal;
 
@@ -15,10 +15,11 @@ public class DescontoParaOrcamentoComMaisDeCincoItens extends Desconto {
 
     @Override
     public BigDecimal calcular(Orcamento orcamento){
-        if(orcamento.getQuantidadeItens() > 5){
             return orcamento.getValor().multiply(new BigDecimal("0.1"));
-        }
+    }
 
-        return proximo.calcular(orcamento);
+    @Override
+    public boolean deveAplicar(Orcamento orcamento) {
+        return orcamento.getQuantidadeItens() > 5;
     }
 }

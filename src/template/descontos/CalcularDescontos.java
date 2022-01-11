@@ -1,6 +1,6 @@
-package template.chainofresponsibility.descontos;
+package template.descontos;
 
-import template.chainofresponsibility.orcamento.Orcamento;
+import template.orcamento.Orcamento;
 
 import java.math.BigDecimal;
 
