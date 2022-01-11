@@ -1,4 +1,4 @@
-package orcamento;
+package strategy.orcamento;
 
 import java.math.BigDecimal;
 

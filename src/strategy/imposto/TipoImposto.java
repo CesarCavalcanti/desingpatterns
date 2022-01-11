@@ -1,6 +1,6 @@
-package imposto;
+package strategy.imposto;
 
-import orcamento.Orcamento;
+import strategy.orcamento.Orcamento;
 
 import java.math.BigDecimal;
 
