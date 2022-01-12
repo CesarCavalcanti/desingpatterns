@@ -14,6 +14,7 @@ public abstract class Desconto {
         this.proximo = proximo;
     }
 
+    //Implementação do padrão template
     public BigDecimal regra (Orcamento orcamento){
         if(deveAplicar(orcamento)){
             return calcular(orcamento);
