@@ -13,6 +13,7 @@ public class DescontoParaOrcamentoComMaisDeCincoItens extends Desconto {
     }
 
 
+    //Implementação do responsibility
     @Override
     public BigDecimal calcular(Orcamento orcamento){
         if(orcamento.getQuantidadeItens() > 5){

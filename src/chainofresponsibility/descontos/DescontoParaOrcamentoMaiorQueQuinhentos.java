@@ -5,6 +5,7 @@ import chainofresponsibility.orcamento.Orcamento;
 import java.math.BigDecimal;
 
 public class DescontoParaOrcamentoMaiorQueQuinhentos extends Desconto {
+    //Implementação do responsibility
 
     public DescontoParaOrcamentoMaiorQueQuinhentos(Desconto proximo) {
         super(proximo);

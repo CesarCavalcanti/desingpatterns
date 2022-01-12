@@ -8,6 +8,8 @@ import java.math.BigDecimal;
 
 public abstract class Desconto {
 
+    //Implementação do responsibility
+
     protected Desconto proximo;
 
     public Desconto(Desconto proximo) {
