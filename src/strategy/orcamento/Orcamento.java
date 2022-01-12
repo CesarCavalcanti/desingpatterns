@@ -4,6 +4,8 @@ import java.math.BigDecimal;
 
 public class Orcamento {
 
+    //Implementação do strategy
+
     private BigDecimal valor;
 
     public Orcamento(BigDecimal valor) {
