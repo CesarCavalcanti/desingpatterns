@@ -21,6 +21,7 @@ public abstract class Desconto {
         return proximo.calcular(orcamento);
     }
 
+    //Padrão state
     protected abstract BigDecimal calcular(Orcamento orcamento);
     public abstract boolean deveAplicar(Orcamento orcamento);
 }
